@@ -1,0 +1,37 @@
+/*
+
+Rule - Selector, Descriptor
+
+*/
+
+.breathVertical {
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+.checkb {
+    margin-left:50px;
+}
+
+.breathHorizontal {
+    position: absolute;
+    left: 40%;
+}
+
+div.todoStatusACTIVE {
+
+    color : blue;
+}
+
+
+div.todoStatusCOMPLETE{
+    color : green;
+    text-decoration : line-through;
+}
+
+div.todoStatusDELETED {
+    color : red;
+    text-decoration : line-through;
+
+}
+

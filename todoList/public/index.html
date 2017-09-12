@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title> Todo App</title>
+    <link rel="stylesheet" href="/styles.css"/>
+</head>
+
+
+<body>
+
+<script>
+    function myFunction2() {
+        var x = document.getElementById('todos_comp_div');
+        var button= document.getElementById("comp");
+        if (x.style.display === 'none') {
+            x.style.display = 'block';
+            button.innerHTML="Hide Completed todos";
+        } else {
+            button.innerHTML="Show Completed todos";
+            x.style.display = 'none';
+        }
+    }
+    function myFunction1() {
+        var x = document.getElementById('todos_del_div');
+        var button= document.getElementById("del");
+        if (x.style.display === 'none') {
+            x.style.display = 'block';
+            button.innerHTML="Hide Deleted todos";
+        } else {
+            button.innerHTML="Show Deleted todos";
+            x.style.display = 'none';
+        }
+    }
+</script>
+
+<h1>Active todos</h1>
+<div id="todos_list_div"></div>
+<br>
+<hr>
+
+
+<input type="text" id="new_todo_input" placeholder="Enter Todo Title Here"/>
+<input type="button" value="Add Todo" onclick="addTodoAJAX()"/>
+<hr>
+
+
+<h1>Completed todos<button id="comp" class="breathHorizontal"  onclick="myFunction2()">Show Completed todos</button>
+</h1>
+<div id="todos_comp_div">
+</div>
+<hr>
+
+
+<h1>Deleted todos<button id="del" class="breathHorizontal" onclick="myFunction1()">Show Deleted todos</button>
+</h1>
+<div id="todos_del_div">
+</div>
+<script src="/script.js" type="text/javascript"></script>
+</body>
+
+
+</html>
